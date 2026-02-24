@@ -1,0 +1,159 @@
+{
+    "nav": {
+        "detect": "Detect",
+        "howItWorks": "How It Works",
+        "aiSigns": "AI Signs",
+        "model": "Model"
+    },
+    "hero": {
+        "badge": "EfficientNet-B1 Powered",
+        "title1": "Detect",
+        "title2": "AI-Generated",
+        "title3": "Images Instantly",
+        "subtitle": "Upload any image and our deep learning model will analyze it in seconds — distinguishing AI-generated content from real photographs with high precision.",
+        "cta": "Start Detecting",
+        "stats": {
+            "accuracy": "Val accuracy",
+            "inputSize": "Input Size",
+            "classes": "Classes",
+            "inference": "Inference"
+        }
+    },
+    "detect": {
+        "label": "Detection",
+        "title": "Upload & Analyze",
+        "description": "Drop an image below and our model will classify it as AI-generated or a real photograph.",
+        "dropzone": {
+            "title": "Drag & drop your image here",
+            "subtitle": "or click to browse your files",
+            "formats": "PNG · JPG · JPEG · WebP — Max 20MB"
+        },
+        "actions": {
+            "analyze": "Analyze Image",
+            "analyzing": "Analyzing...",
+            "clear": "Clear"
+        },
+        "result": {
+            "real": "REAL IMAGE",
+            "fake": "AI GENERATED",
+            "confidence": "Confidence",
+            "low": "Low",
+            "high": "High",
+            "fakeProb": "Fake Probability",
+            "realProb": "Real Probability"
+        }
+    },
+    "howItWorks": {
+        "label": "Process",
+        "title": "How It Works",
+        "description": "Three simple steps to determine whether an image is AI-generated or real.",
+        "steps": {
+            "1": {
+                "title": "Upload Image",
+                "desc": "Drag and drop or select any image from your device. Supports PNG, JPG, JPEG, and WebP formats."
+            },
+            "2": {
+                "title": "AI Analysis",
+                "desc": "The image is resized to 240×240, normalized, and passed through an EfficientNet-B1 neural network."
+            },
+            "3": {
+                "title": "Get Results",
+                "desc": "View the classification — Real or Fake — along with confidence scores and raw probability breakdowns."
+            }
+        }
+    },
+    "aiSigns": {
+        "label": "Learn",
+        "title": "Signs of AI-Generated Images",
+        "description": "Even the best AI models leave traces. Here are the telltale artifacts our model looks for.",
+        "features": {
+            "hands": {
+                "title": "Unnatural Hands & Fingers",
+                "desc": "AI often generates extra, fused, or oddly bent fingers. Look for six fingers, floating thumbs, or impossible joint angles."
+            },
+            "lighting": {
+                "title": "Inconsistent Lighting",
+                "desc": "Shadows may point in different directions or be missing entirely. Light sources often contradict each other across the scene."
+            },
+            "texture": {
+                "title": "Texture Anomalies",
+                "desc": "Skin can appear waxy or plastic-like. Hair strands may merge into blobs, and fabric patterns often distort unnaturally."
+            },
+            "text": {
+                "title": "Warped Text & Symbols",
+                "desc": "AI struggles with text — letters morph, words become gibberish, and signs contain nonsensical characters."
+            },
+            "symmetry": {
+                "title": "Symmetry Glitches",
+                "desc": "Earrings that don't match, asymmetric collars, or eyes at slightly different heights reveal the AI's pattern-matching limits."
+            },
+            "background": {
+                "title": "Background Distortion",
+                "desc": "Straight lines may bend, architecture warps, and background objects can melt into each other or disappear entirely."
+            },
+            "faces": {
+                "title": "Uncanny Valley Faces",
+                "desc": "Overly smooth skin, teeth that blend together, or irises with inconsistent patterns are common giveaways."
+            },
+            "color": {
+                "title": "Color Bleeding",
+                "desc": "Colors from one object may leak into adjacent areas. Edges between objects often show unnatural color transitions."
+            },
+            "patterns": {
+                "title": "Repeating Patterns",
+                "desc": "AI may clone textures or patterns — look for identical leaves, bricks, or crowd faces that repeat unnaturally."
+            },
+            "depth": {
+                "title": "Depth & Perspective Errors",
+                "desc": "Railings, stairs, or roads may warp or intersect in impossible ways. Foreground and background objects can appear at inconsistent scales."
+            },
+            "overlaps": {
+                "title": "Impossible Object Overlaps",
+                "desc": "Objects can blend through each other or overlap without clear boundaries, especially where limbs, clothing, and accessories meet."
+            },
+            "glossy": {
+                "title": "Over-Processed Glossy Look",
+                "desc": "Images can look overly polished, with hyper-smooth skin, razor-sharp edges, and uniform noise that feels more like a filter than a camera sensor."
+            },
+            "confusion": {
+                "title": "Concept Confusion",
+                "desc": "Small story details often fail — clocks with impossible times, reflections that don’t match the subject, or jewelry that changes design across the image."
+            }
+        }
+    },
+    "modelInfo": {
+        "label": "Technical",
+        "title": "Model Information",
+        "description": "Under the hood — the architecture and training details powering the detector.",
+        "architecture": {
+            "title": "Architecture",
+            "baseModel": "Base Model",
+            "classifier": "Classifier",
+            "parameters": "Parameters",
+            "framework": "Framework"
+        },
+        "inputPipeline": {
+            "title": "Input Pipeline",
+            "inputSize": "Input Size",
+            "colorSpace": "Color Space",
+            "normMean": "Normalization Mean",
+            "normStd": "Normalization Std"
+        },
+        "decisionLogic": {
+            "title": "Decision Threshold & Pipeline",
+            "activation": "Activation",
+            "threshold": "Threshold",
+            "classes": "Classes",
+            "rule": "Decision Rule",
+            "ruleValue": "fake_prob ≥ 0.945 → FAKE",
+            "classifiedReal": "Classified Real",
+            "classifiedFake": "Classified Fake",
+            "thresholdLabel": "fake_prob threshold: 0.945",
+            "inferencePipeline": "Inference Pipeline"
+        }
+    },
+    "footer": {
+        "desc": "Powered by EfficientNet-B1 deep learning architecture. Built with PyTorch, FastAPI, and React. Designed to help identify AI-generated imagery.",
+        "bottom": "© 2026 AI Image Detector — For educational & research purposes"
+    }
+}

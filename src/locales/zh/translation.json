@@ -1,0 +1,159 @@
+{
+    "nav": {
+        "detect": "检测",
+        "howItWorks": "工作原理",
+        "aiSigns": "AI 迹象",
+        "model": "模型"
+    },
+    "hero": {
+        "badge": "由 EfficientNet-B1 驱动",
+        "title1": "立即检测",
+        "title2": "AI 生成的",
+        "title3": "图像",
+        "subtitle": "上传任何图像，我们的深度学习模型将在几秒钟内对其进行分析——以高精度区分 AI 生成的内容与真实照片。",
+        "cta": "开始检测",
+        "stats": {
+            "accuracy": "验证准确度",
+            "inputSize": "输入尺寸",
+            "classes": "类别",
+            "inference": "推理时间"
+        }
+    },
+    "detect": {
+        "label": "检测",
+        "title": "上传与分析",
+        "description": "将图像拖放到下方，我们的模型会将其分类为 AI 生成或真实照片。",
+        "dropzone": {
+            "title": "将图像拖放到此处",
+            "subtitle": "或点击浏览您的文件",
+            "formats": "PNG · JPG · JPEG · WebP — 最大 20MB"
+        },
+        "actions": {
+            "analyze": "分析图像",
+            "analyzing": "分析中...",
+            "clear": "清除"
+        },
+        "result": {
+            "real": "真实图像",
+            "fake": "AI 生成",
+            "confidence": "置信度",
+            "low": "低",
+            "high": "高",
+            "fakeProb": "虚假概率",
+            "realProb": "真实概率"
+        }
+    },
+    "howItWorks": {
+        "label": "流程",
+        "title": "工作原理",
+        "description": "三个简单步骤确定图像是 AI 生成还是真实的。",
+        "steps": {
+            "1": {
+                "title": "上传图像",
+                "desc": "拖放或从您的设备中选择任何图像。支持 PNG、JPG、JPEG 和 WebP 格式。"
+            },
+            "2": {
+                "title": "AI 分析",
+                "desc": "图像将调整为 240×240，经过归一化，并送入 EfficientNet-B1 神经网络。"
+            },
+            "3": {
+                "title": "获取结果",
+                "desc": "查看分类——真实或虚假——以及置信度分数和原始概率分析。"
+            }
+        }
+    },
+    "aiSigns": {
+        "label": "学习",
+        "title": "AI 生成图像的迹象",
+        "description": "即使是最优秀的 AI 模型也会留下痕迹。以下是我们的模型寻找的明显特征。",
+        "features": {
+            "hands": {
+                "title": "不自然的手和手指",
+                "desc": "AI often generates extra, fused, or oddly bent fingers. Look for six fingers, floating thumbs, or impossible joint angles."
+            },
+            "lighting": {
+                "title": "不一致的光照",
+                "desc": "Shadows may point in different directions or be missing entirely. Light sources often contradict each other across the scene."
+            },
+            "texture": {
+                "title": "纹理异常",
+                "desc": "Skin can appear waxy or plastic-like. Hair strands may merge into blobs, and fabric patterns often distort unnaturally."
+            },
+            "text": {
+                "title": "扭曲的文本和符号",
+                "desc": "AI struggles with text — letters morph, words become gibberish, and signs contain nonsensical characters."
+            },
+            "symmetry": {
+                "title": "对称性缺陷",
+                "desc": "Earrings that don't match, asymmetric collars, or eyes at slightly different heights reveal the AI's pattern-matching limits."
+            },
+            "background": {
+                "title": "背景失真",
+                "desc": "Straight lines may bend, architecture warps, and background objects can melt into each other or disappear entirely."
+            },
+            "faces": {
+                "title": "恐怖谷效应的面孔",
+                "desc": "Overly smooth skin, teeth that blend together, or irises with inconsistent patterns are common giveaways."
+            },
+            "color": {
+                "title": "颜色溢出",
+                "desc": "Colors from one object may leak into adjacent areas. Edges between objects often show unnatural color transitions."
+            },
+            "patterns": {
+                "title": "重复模式",
+                "desc": "AI may clone textures or patterns — look for identical leaves, bricks, or crowd faces that repeat unnaturally."
+            },
+            "depth": {
+                "title": "深度和透视错误",
+                "desc": "Railings, stairs, or roads may warp or intersect in impossible ways. Foreground and background objects can appear at inconsistent scales."
+            },
+            "overlaps": {
+                "title": "不可思议的对象重叠",
+                "desc": "Objects can blend through each other or overlap without clear boundaries, especially where limbs, clothing, and accessories meet."
+            },
+            "glossy": {
+                "title": "过度处理的光泽外观",
+                "desc": "Images can look overly polished, with hyper-smooth skin, razor-sharp edges, and uniform noise that feels more like a filter than a camera sensor."
+            },
+            "confusion": {
+                "title": "概念混淆",
+                "desc": "Small story details often fail — clocks with impossible times, reflections that don’t match the subject, or jewelry that changes design across the image."
+            }
+        }
+    },
+    "modelInfo": {
+        "label": "技术细节",
+        "title": "模型信息",
+        "description": "深入了解驱动检测器的架构和训练细节。",
+        "architecture": {
+            "title": "架构",
+            "baseModel": "基础模型",
+            "classifier": "分类器",
+            "parameters": "参数量",
+            "framework": "框架"
+        },
+        "inputPipeline": {
+            "title": "输入流水线",
+            "inputSize": "输入尺寸",
+            "colorSpace": "色彩空间",
+            "normMean": "归一化均值",
+            "normStd": "归一化标准差"
+        },
+        "decisionLogic": {
+            "title": "决策阈值与流水线",
+            "activation": "激活函数",
+            "threshold": "阈值",
+            "classes": "类别",
+            "rule": "决策规则",
+            "ruleValue": "fake_prob ≥ 0.945 → 虚假",
+            "classifiedReal": "分类为真实",
+            "classifiedFake": "分类为虚假",
+            "thresholdLabel": "fake_prob 阈值: 0.945",
+            "inferencePipeline": "推理流水线"
+        }
+    },
+    "footer": {
+        "desc": "基于 EfficientNet-B1 深度学习架构。使用 PyTorch、FastAPI 和 React 构建。旨在帮助识别 AI 生成的图像。",
+        "bottom": "© 2026 AI 图像检测器 — 仅用于教育和研究目的"
+    }
+}

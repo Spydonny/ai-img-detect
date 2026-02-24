@@ -1,0 +1,159 @@
+{
+    "nav": {
+        "detect": "Анықтау",
+        "howItWorks": "Жұмыс принципі",
+        "aiSigns": "ЖИ белгілері",
+        "model": "Модель"
+    },
+    "hero": {
+        "badge": "EfficientNet-B1 негізінде",
+        "title1": "ЖИ арқылы жасалған кескіндерді",
+        "title2": "бірден",
+        "title3": "анықтаңыз",
+        "subtitle": "Кез келген кескінді жүктеңіз және біздің терең оқыту моделіміз оны бірнеше секунд ішінде талдайды — ЖИ арқылы жасалған мазмұнды нақты фотосуреттерден жоғары дәлдікпен ажыратады.",
+        "cta": "Анықтауды бастау",
+        "stats": {
+            "accuracy": "Дәлдік",
+            "inputSize": "Кіріс өлшемі",
+            "classes": "Кластар",
+            "inference": "Қорытынды уақыты"
+        }
+    },
+    "detect": {
+        "label": "Анықтау",
+        "title": "Жүктеу және талдау",
+        "description": "Кескінді төменге тастаңыз, сонда біздің моделіміз оны ЖИ арқылы жасалған немесе нақты фотосурет ретінде жіктейді.",
+        "dropzone": {
+            "title": "Кескінді осы жерге сүйреп апарыңыз",
+            "subtitle": "немесе файлдарды шолу үшін басыңыз",
+            "formats": "PNG · JPG · JPEG · WebP — Макс 20MB"
+        },
+        "actions": {
+            "analyze": "Кескінді талдау",
+            "analyzing": "Талдау...",
+            "clear": "Тазалау"
+        },
+        "result": {
+            "real": "НАҚТЫ КЕСКІН",
+            "fake": "ЖИ АРҚЫЛЫ ЖАСАЛҒАН",
+            "confidence": "Сенімділік",
+            "low": "Төмен",
+            "high": "Жоғары",
+            "fakeProb": "Жасанды болу ықтималдығы",
+            "realProb": "Нақты болу ықтималдығы"
+        }
+    },
+    "howItWorks": {
+        "label": "Процесс",
+        "title": "Бұл қалай жұмыс істейді",
+        "description": "Кескінді ЖИ жасаған немесе нақты екенін анықтауға арналған үш қарапайым қадам.",
+        "steps": {
+            "1": {
+                "title": "Кескінді жүктеу",
+                "desc": "Құрылғыңыздан кез келген кескінді сүйреп апарыңыз немесе таңдаңыз. PNG, JPG, JPEG және WebP форматтарын қолдайды."
+            },
+            "2": {
+                "title": "ЖИ талдауы",
+                "desc": "Кескін өлшемі 240×240-қа дейін өзгертіледі, нормаланады және EfficientNet-B1 нейрондық желісі арқылы өтеді."
+            },
+            "3": {
+                "title": "Нәтижелерді алу",
+                "desc": "Сенімділік көрсеткіштерімен және шикі ықтималдық деректерімен бірге жіктеуді — Нақты немесе Жасанды — көріңіз."
+            }
+        }
+    },
+    "aiSigns": {
+        "label": "Үйрену",
+        "title": "ЖИ арқылы жасалған кескіндердің белгілері",
+        "description": "Тіпті ең жақсы ЖИ модельдері де із қалдырады. Біздің моделіміз іздейтін айқын артефактілер осында.",
+        "features": {
+            "hands": {
+                "title": "Unnatural Hands & Fingers",
+                "desc": "AI often generates extra, fused, or oddly bent fingers. Look for six fingers, floating thumbs, or impossible joint angles."
+            },
+            "lighting": {
+                "title": "Inconsistent Lighting",
+                "desc": "Shadows may point in different directions or be missing entirely. Light sources often contradict each other across the scene."
+            },
+            "texture": {
+                "title": "Texture Anomalies",
+                "desc": "Skin can appear waxy or plastic-like. Hair strands may merge into blobs, and fabric patterns often distort unnaturally."
+            },
+            "text": {
+                "title": "Warped Text & Symbols",
+                "desc": "AI struggles with text — letters morph, words become gibberish, and signs contain nonsensical characters."
+            },
+            "symmetry": {
+                "title": "Symmetry Glitches",
+                "desc": "Earrings that don't match, asymmetric collars, or eyes at slightly different heights reveal the AI's pattern-matching limits."
+            },
+            "background": {
+                "title": "Background Distortion",
+                "desc": "Straight lines may bend, architecture warps, and background objects can melt into each other or disappear entirely."
+            },
+            "faces": {
+                "title": "Uncanny Valley Faces",
+                "desc": "Overly smooth skin, teeth that blend together, or irises with inconsistent patterns are common giveaways."
+            },
+            "color": {
+                "title": "Color Bleeding",
+                "desc": "Colors from one object may leak into adjacent areas. Edges between objects often show unnatural color transitions."
+            },
+            "patterns": {
+                "title": "Repeating Patterns",
+                "desc": "AI may clone textures or patterns — look for identical leaves, bricks, or crowd faces that repeat unnaturally."
+            },
+            "depth": {
+                "title": "Depth & Perspective Errors",
+                "desc": "Railings, stairs, or roads may warp or intersect in impossible ways. Foreground and background objects can appear at inconsistent scales."
+            },
+            "overlaps": {
+                "title": "Impossible Object Overlaps",
+                "desc": "Objects can blend through each other or overlap without clear boundaries, especially where limbs, clothing, and accessories meet."
+            },
+            "glossy": {
+                "title": "Over-Processed Glossy Look",
+                "desc": "Images can look overly polished, with hyper-smooth skin, razor-sharp edges, and uniform noise that feels more like a filter than a camera sensor."
+            },
+            "confusion": {
+                "title": "Concept Confusion",
+                "desc": "Small story details often fail — clocks with impossible times, reflections that don’t match the subject, or jewelry that changes design across the image."
+            }
+        }
+    },
+    "modelInfo": {
+        "label": "Техникалық",
+        "title": "Модель туралы ақпарат",
+        "description": "Ішкі құрылымы — детекторымызды жұмыс істететін архитектура мен оқыту мәліметтері.",
+        "architecture": {
+            "title": "Архитектура",
+            "baseModel": "Базалық модель",
+            "classifier": "Классификатор",
+            "parameters": "Параметрлер",
+            "framework": "Фреймворк"
+        },
+        "inputPipeline": {
+            "title": "Кіріс құбыры",
+            "inputSize": "Кіріс өлшемі",
+            "colorSpace": "Түс кеңістігі",
+            "normMean": "Нормалау орташа мәні",
+            "normStd": "Нормалау ауытқуы"
+        },
+        "decisionLogic": {
+            "title": "Шешім қабылдау шегі және құбыры",
+            "activation": "Активация",
+            "threshold": "Шек",
+            "classes": "Кластар",
+            "rule": "Шешім ережесі",
+            "ruleValue": "fake_prob ≥ 0.945 → ЖАСАНДЫ",
+            "classifiedReal": "Нақты ретінде жіктелді",
+            "classifiedFake": "Жасанды ретінде жіктелді",
+            "thresholdLabel": "fake_prob шегі: 0.945",
+            "inferencePipeline": "Қорытынды құбыры"
+        }
+    },
+    "footer": {
+        "desc": "EfficientNet-B1 терең оқыту архитектурасымен жұмыс істейді. PyTorch, FastAPI және React арқылы жасалған. ЖИ арқылы жасалған кескіндерді анықтауға көмектесу үшін жасалған.",
+        "bottom": "© 2026 ЖИ кескін детекторы — Оқу және зерттеу мақсаттары үшін"
+    }
+}

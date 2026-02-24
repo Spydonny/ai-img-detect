@@ -1,0 +1,159 @@
+{
+    "nav": {
+        "detect": "شناخت کریں",
+        "howItWorks": "یہ کیسے کام کرتا ہے",
+        "aiSigns": "AI کی نشانیاں",
+        "model": "ماڈل"
+    },
+    "hero": {
+        "badge": "EfficientNet-B1 سے لیس",
+        "title1": "AI سے تیار کردہ",
+        "title2": "تصاویر کی",
+        "title3": "فوری شناخت کریں",
+        "subtitle": "کوئی بھی تصویر اپ لوڈ کریں اور ہمارا ڈیپ لرننگ ماڈل سیکنڈوں میں اس کا تجزیہ کرے گا — AI سے تیار کردہ مواد کو حقیقی تصاویر سے اعلیٰ درستگی کے ساتھ الگ کرے گا۔",
+        "cta": "شناخت شروع کریں",
+        "stats": {
+            "accuracy": "درستگی",
+            "inputSize": "ان پٹ سائز",
+            "classes": "اقسام",
+            "inference": "تجزیاتی وقت"
+        }
+    },
+    "detect": {
+        "label": "شناخت",
+        "title": "اپ لوڈ اور تجزیہ",
+        "description": "نیچے ایک تصویر ڈالیں اور ہمارا ماڈل اسے AI سے تیار کردہ یا حقیقی تصویر کے طور پر درجہ بندی کرے گا۔",
+        "dropzone": {
+            "title": "اپنی تصویر یہاں کھینچ کر لائیں",
+            "subtitle": "یا فائلیں تلاش کرنے کے لیے کلک کریں",
+            "formats": "PNG · JPG · JPEG · WebP — زیادہ سے زیادہ 20MB"
+        },
+        "actions": {
+            "analyze": "تصویر کا تجزیہ کریں",
+            "analyzing": "تجزیہ ہو رہا ہے...",
+            "clear": "صاف کریں"
+        },
+        "result": {
+            "real": "حقیقی تصویر",
+            "fake": "AI سے تیار کردہ",
+            "confidence": "اعتماد",
+            "low": "کم",
+            "high": "زیادہ",
+            "fakeProb": "جعلی ہونے کا امکان",
+            "realProb": "حقیقی ہونے کا امکان"
+        }
+    },
+    "howItWorks": {
+        "label": "عمل",
+        "title": "یہ کیسے کام کرتا ہے",
+        "description": "یہ معلوم کرنے کے لیے کہ تصویر AI سے تیار کی گئی ہے یا حقیقی، تین آسان اقدامات۔",
+        "steps": {
+            "1": {
+                "title": "تصویر اپ لوڈ کریں",
+                "desc": "اپنے آلے سے کوئی بھی تصویر کھینچ کر لائیں یا منتخب کریں۔ PNG، JPG، JPEG اور WebP فارمیٹس کو سپورٹ کرتا ہے۔"
+            },
+            "2": {
+                "title": "AI تجزیہ",
+                "desc": "تصویر کا سائز 240×240 کر دیا جاتا ہے، اسے نارملائز کیا جاتا ہے، اور EfficientNet-B1 نیورل نیٹ ورک سے گزارا جاتا ہے۔"
+            },
+            "3": {
+                "title": "نتائج حاصل کریں",
+                "desc": "درجہ بندی دیکھیں — حقیقی یا جعلی — اعتماد کے اسکور اور خام امکانات کی تفصیلات کے ساتھ۔"
+            }
+        }
+    },
+    "aiSigns": {
+        "label": "سیکھیں",
+        "title": "AI سے تیار کردہ تصاویر کی نشانیاں",
+        "description": "حتیٰ کہ بہترین AI ماڈلز بھی نشانات چھوڑ دیتے ہیں۔ یہاں وہ واضح نشانیاں ہیں جنہیں ہمارا ماڈل تلاش کرتا ہے۔",
+        "features": {
+            "hands": {
+                "title": "Unnatural Hands & Fingers",
+                "desc": "AI often generates extra, fused, or oddly bent fingers. Look for six fingers, floating thumbs, or impossible joint angles."
+            },
+            "lighting": {
+                "title": "Inconsistent Lighting",
+                "desc": "Shadows may point in different directions or be missing entirely. Light sources often contradict each other across the scene."
+            },
+            "texture": {
+                "title": "Texture Anomalies",
+                "desc": "Skin can appear waxy or plastic-like. Hair strands may merge into blobs, and fabric patterns often distort unnaturally."
+            },
+            "text": {
+                "title": "Warped Text & Symbols",
+                "desc": "AI struggles with text — letters morph, words become gibberish, and signs contain nonsensical characters."
+            },
+            "symmetry": {
+                "title": "Symmetry Glitches",
+                "desc": "Earrings that don't match, asymmetric collars, or eyes at slightly different heights reveal the AI's pattern-matching limits."
+            },
+            "background": {
+                "title": "Background Distortion",
+                "desc": "Straight lines may bend, architecture warps, and background objects can melt into each other or disappear entirely."
+            },
+            "faces": {
+                "title": "Uncanny Valley Faces",
+                "desc": "Overly smooth skin, teeth that blend together, or irises with inconsistent patterns are common giveaways."
+            },
+            "color": {
+                "title": "Color Bleeding",
+                "desc": "Colors from one object may leak into adjacent areas. Edges between objects often show unnatural color transitions."
+            },
+            "patterns": {
+                "title": "Repeating Patterns",
+                "desc": "AI may clone textures or patterns — look for identical leaves, bricks, or crowd faces that repeat unnaturally."
+            },
+            "depth": {
+                "title": "Depth & Perspective Errors",
+                "desc": "Railings, stairs, or roads may warp or intersect in impossible ways. Foreground and background objects can appear at inconsistent scales."
+            },
+            "overlaps": {
+                "title": "Impossible Object Overlaps",
+                "desc": "Objects can blend through each other or overlap without clear boundaries, especially where limbs, clothing, and accessories meet."
+            },
+            "glossy": {
+                "title": "Over-Processed Glossy Look",
+                "desc": "Images can look overly polished, with hyper-smooth skin, razor-sharp edges, and uniform noise that feels more like a filter than a camera sensor."
+            },
+            "confusion": {
+                "title": "Concept Confusion",
+                "desc": "Small story details often fail — clocks with impossible times, reflections that don’t match the subject, or jewelry that changes design across the image."
+            }
+        }
+    },
+    "modelInfo": {
+        "label": "تکنیکی",
+        "title": "ماڈل کی معلومات",
+        "description": "اندرونی تفصیلات — وہ فن تعمیر اور تربیتی تفصیلات جو ڈیٹیکٹر کو طاقت دیتی ہیں۔",
+        "architecture": {
+            "title": "آرکیٹیکچر",
+            "baseModel": "بنیادی ماڈل",
+            "classifier": "کلاسیفائر",
+            "parameters": "پیرامیٹرز",
+            "framework": "فریم ورک"
+        },
+        "inputPipeline": {
+            "title": "ان پٹ پائپ لائن",
+            "inputSize": "ان پٹ سائز",
+            "colorSpace": "کلر اسپیس",
+            "normMean": "نارملائزیشن اوسط",
+            "normStd": "نارملائزیشن معیار"
+        },
+        "decisionLogic": {
+            "title": "فیصلہ سازی کی حد اور پائپ لائن",
+            "activation": "فعالیت",
+            "threshold": "حد",
+            "classes": "اقسام",
+            "rule": "فیصلے کا اصول",
+            "ruleValue": "fake_prob ≥ 0.945 → جعلی",
+            "classifiedReal": "حقیقی قرار دیا گیا",
+            "classifiedFake": "جعلی قرار دیا گیا",
+            "thresholdLabel": "fake_prob حد: 0.945",
+            "inferencePipeline": "تجزیاتی پائپ لائن"
+        }
+    },
+    "footer": {
+        "desc": "EfficientNet-B1 ڈیپ لرننگ آرکیٹیکچر کے ذریعے تقویت یافتہ۔ PyTorch، FastAPI اور React کے ساتھ بنایا گیا ہے۔ AI سے تیار کردہ تصاویر کی شناخت میں مدد کے لیے ڈیزائن کیا گیا ہے۔",
+        "bottom": "© 2026 AI امیج ڈیٹیکٹر — تعلیمی اور تحقیقی مقاصد کے لیے"
+    }
+}
