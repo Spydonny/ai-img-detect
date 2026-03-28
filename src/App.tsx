@@ -537,77 +537,7 @@ function App() {
               </div>
             </div>
 
-            {/* Decision Logic */}
-            <div className="model-card model-card-full">
-              <div className="model-card-header">
-                <div className="model-card-icon">
-                  <Gauge size={22} strokeWidth={1.8} />
-                </div>
-                <h3 className="model-card-title">{t('modelInfo.decisionLogic.title')}</h3>
-              </div>
-              <div className="model-specs">
-                <div className="model-spec-row">
-                  <span className="model-spec-label">{t('modelInfo.decisionLogic.activation')}</span>
-                  <span className="model-spec-value">Softmax (dim=1)</span>
-                </div>
-                <div className="model-spec-row">
-                  <span className="model-spec-label">{t('modelInfo.decisionLogic.threshold')}</span>
-                  <span className="model-spec-value">0.945</span>
-                </div>
-                <div className="model-spec-row">
-                  <span className="model-spec-label">{t('modelInfo.decisionLogic.classes')}</span>
-                  <span className="model-spec-value">["fake", "real"]</span>
-                </div>
-                <div className="model-spec-row">
-                  <span className="model-spec-label">{t('modelInfo.decisionLogic.rule')}</span>
-                  <span className="model-spec-value">{t('modelInfo.decisionLogic.ruleValue')}</span>
-                </div>
-              </div>
-              <div className="threshold-visual">
-                <div className="confidence-bar-labels" style={{ fontSize: '0.82rem' }}>
-                  <span className="threshold-label-real">
-                    <CheckCircle2 size={14} strokeWidth={2} />
-                    <span>{t('modelInfo.decisionLogic.classifiedReal')}</span>
-                  </span>
-                  <span className="threshold-label-fake">
-                    <XCircle size={14} strokeWidth={2} />
-                    <span>{t('modelInfo.decisionLogic.classifiedFake')}</span>
-                  </span>
-                </div>
-                <div className="threshold-bar">
-                  <div className="threshold-marker" style={{ left: '94.5%' }} />
-                </div>
-                <div className="threshold-labels">
-                  <span>0.0</span>
-                  <span>← {t('modelInfo.decisionLogic.thresholdLabel')} →</span>
-                  <span>1.0</span>
-                </div>
-              </div>
 
-              <div style={{ marginTop: '24px' }}>
-                <div
-                  className="model-spec-label"
-                  style={{ marginBottom: '12px', fontSize: '0.9rem' }}
-                >
-                  Inference Pipeline
-                </div>
-                <div className="model-arch-diagram">
-                  <div className="arch-block">Image Input</div>
-                  <span className="arch-arrow">→</span>
-                  <div className="arch-block">Resize 240²</div>
-                  <span className="arch-arrow">→</span>
-                  <div className="arch-block">Normalize</div>
-                  <span className="arch-arrow">→</span>
-                  <div className="arch-block">EfficientNet-B1</div>
-                  <span className="arch-arrow">→</span>
-                  <div className="arch-block">Linear(2)</div>
-                  <span className="arch-arrow">→</span>
-                  <div className="arch-block">Softmax</div>
-                  <span className="arch-arrow">→</span>
-                  <div className="arch-block">Threshold</div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
