@@ -254,7 +254,7 @@ function App() {
           </a>
           <div className="hero-stats">
             <div className="hero-stat">
-              <div className="hero-stat-value">100%</div>
+              <div className="hero-stat-value">98%</div>
               <div className="hero-stat-label">{t('hero.stats.accuracy')}</div>
             </div>
             <div className="hero-stat">
